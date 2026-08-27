@@ -10,6 +10,11 @@ public class HDFCbank extends Bank {
 	@Override
 	public double IntRate() {
 		
-		return 10.1;
+		return rateInterast=10.11;
+	}
+	@Override
+	void calculateInt(int principal, int rate, int time) {
+		
+		super.calculateInt(principal, rate, time);
 	}
 }

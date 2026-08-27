@@ -1,13 +1,18 @@
 package in.co.oop.polymorephism;
 
 public class Bank {
+	
+	protected double principal;
+	protected double rate;
+	protected int time;
+	protected double rateInterast;
 
 	public String getName() {
 		return "RBI";
 	}
 
 	public double IntRate() {
-		return 11.1;
+		return rateInterast=11.1;
 	}
 
 	public static Bank getBank(int i) {
@@ -22,6 +27,15 @@ public class Bank {
 			return new HDFCbank();
 		}
 		return null;
+	}
+	
+	void calculateInt(int principal, int rate ,int time ) {
+		this.principal =principal;
+		this.rate =rate;
+		this.time =time;
+		rateInterast=(principal*rate*time)/100;
+		//System.out.println("Intrast Rate = "+(principal*rate*time)/100);
+		
 	}
 
 }
