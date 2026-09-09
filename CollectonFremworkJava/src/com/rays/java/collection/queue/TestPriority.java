@@ -15,7 +15,7 @@ public class TestPriority {
 //		p.offer("Ram");
 		System.out.println(p);
 		
-		System.out.println(p.peek());
+		System.out.println(p.peek()); // First element ko get karta hai
 		
 		System.out.println(p.poll()); //First Element Remove karta hai
 		System.out.println(p); 
