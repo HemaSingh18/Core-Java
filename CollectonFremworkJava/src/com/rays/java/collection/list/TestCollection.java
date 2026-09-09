@@ -27,6 +27,8 @@ public class TestCollection {
 		System.out.println(con.containsAll(con2));
 		System.out.println(con);
 		
+		System.out.println(con.retainAll(con2)); // Return Boolean value
+		
 		System.out.println(con.isEmpty()); //return boolean value, isEmpty() method ka use ye check karne ke liye hota hai ki collection ke andar koi element hai ya nahi.
 		System.out.println(con);
 		
